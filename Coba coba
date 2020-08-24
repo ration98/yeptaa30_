@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+class hitung{
+    private :
+    int a, b, c;
+    //a, b, c merupakan variabel yang sifatnya private. Artinya hanya dapat diakses pada class hitung.
+
+    public :
+    void assign(int d, int e, int f){
+    //Fungsi assign merupakan fungsi bernilai void dan bersifat public. Artinya dapat diakses diluar class.
+        a=d;
+        b=e;
+        c=f;
+    }
+
+    int tambah(){
+    //tambah merupakan fungsi bernilai integer yang mengembalikan penjumlahan dari ketiga variabel yang nilainya sudah diubah pada fungsi assign.
+        return a+b+c;
+    }
+};
+
+int main(){
+    //main merupakan fungsi utama diluar class.
+    hitung obj;
+    obj.assign(2,8,5);
+    cout << obj.tambah() << endl;
+    return 0;
+}
