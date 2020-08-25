@@ -1,0 +1,22 @@
+<?php
+
+class Kuda {
+
+   public $jenis;
+   public $kelamis;
+   public $makanan;
+
+   public function Kuda_berlari() {
+    return "Kuda berlari";   
+   }
+  public function Kuda_lelah() {
+      return "Kuda lelah";
+  }
+}
+
+$Kuda_andi = new Kuda();
+echo $Kuda_andi->Kuda_berlari();
+echo "<br />";
+echo $Kuda_andi->Kuda_lelah();
+
+?>
